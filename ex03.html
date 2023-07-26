@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+    <h1>Isso é JavaScript</h1>
+    <script>
+"use strict"; //somente esse strict sera usado no comando
+//Declarar variáveis
+var curso = "Desenvolvendo Front-end, "
+var data = new Date() //instanciando as funções
+var dia = data.getDate()
+var mes = data.getMonth()+1
+var ano = data.getFullYear()
+var dataCompleta = dia+"/" +mes+"/" +ano
+//alert('Funcionou!') o alert pode ser usado para a verificação do código
+document.write(curso)
+//document.write(mes+ ", ") // concatenação (+) juntar texto com varivel, ou valores, ou somente variáveis.
+document.write(dataCompleta)
+
+console.log("Hoje é dia "+dia)
+console.log("Hoje é o mês: "+mes)
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
