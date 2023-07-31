@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <h1>Acenda a lâmpada</h1>
+
+    <div> <p><img id="lampada" src="/img/apagada.jpeg" onclick="quebrada()" onmouseout="apagada()" onmouseenter="acesa()"></p></div>
+
+<script>
+
+let lamp = window.document.getElementById('lampada')
+
+function apagada(){
+    lamp.src = '/img/apagada.jpeg'
+}
+
+function acesa(){
+    lamp.src='/img/luz.jpeg'
+}
+
+function quebrada(){
+    lamp.src= '/img/quebrada.jpg'
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
