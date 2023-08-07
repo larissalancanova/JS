@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+
+
+
+    <style>
+        #azul {
+            background-color: blue;
+
+        }
+
+        #verde {
+            background-color: rgb(148, 148, 148);
+
+
+        }
+
+        #laranja {
+            background-color: orange;
+
+
+        }
+
+        #azul,
+        #verde,
+        #laranja {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px black solid;
+            vertical-align: middle; line-height: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Escolhendo uma cor e exibindo o seu significado</h1>
+
+    <div id="container" class="todos">
+        <div id="azul" onclick="clicara()">Azul</div>
+        <div id="verde" onclick="clicarv()">Verde</div>
+        <div id="laranja" onclick="clicarl()">Laranja</div>
+    </div>
+
+    <script>
+        var azul = window.document.getElementById('azul')
+        var verde = window.document.getElementById('verde')
+        var laranja = window.document.getElementById('laranja')
+
+        function clicara() {
+            azul.style.background = 'blue'
+            document.body.classList.remove
+        }
+
+        function clicarv() {
+            azul.style.background = 'green'
+
+        }
+
+        function clicarl() {
+            azul.style.background = 'orange'
+
+        }
+    </script>
+</body>
+
+</html>
