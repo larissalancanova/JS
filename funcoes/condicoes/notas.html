@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-w7idth, initial-scale=1.0">
+    <title>Estrutura Condicional</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Estrutura condicional</h1>
+    </div>
+    <!--    <p>
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento">
+    </p>-->
+    <form>
+        <p>
+            <label for="nascimento">Digite sua data de nascimento:</label>
+            <input required type="text" id="diaNasc" maxlength="2" placeholder="00" style="width: 25px;">
+            <input required type="text" id="mesNasc" maxlength="2" placeholder="00" style="width: 25px;">
+            <input required type="text" id="anoNasc" maxlength="4" placeholder="0000" style="width: 50px;">
+            <button onclick="enviar()">Enviar</button>
+
+
+        </p>
+    </form>
+    <p id="idade"></p>
+    <p id="resultado"></p>
+
+    <script>
+        /** let nota1 = parseFloat(prompt("Primeira nota:"))
+        let nota2 = parseFloat(prompt("Segunda nota:"))
+        let media = (nota1 + nota2)/2
+
+        console.log("A primeira nota foi "+ nota1 +", a segunda nota foi "+ nota2 + 
+        ". \n Logo a média das notas é: " +media.toFixed(2))
+
+        /*Se a media for maior ou igual a 7, aluno aprovado
+        Caso contrario, será reprovado*/
+
+        // if (media >= 7){
+        //     console.log("Aprovado!")
+        // } else {
+        //    console.log("Reprovado!")
+        //}
+
+        // console.log("\n")
+        // console.log("ENCADEADA:")
+        /*Se a media for menor que 3, o desempenho será péssimo.
+        Se a media for menor que 5, o desempenho será ruim
+        Se a media for menor que 7, o desempenho será regular
+        Se a media for menor que 9, o desempenho será bom
+        caso contrario, o desempenho será ótimo*/
+        // if(media <= 3){
+        //     console.log("O seu desempenho foi péssimo!")
+        // }else if(media < 5){
+        //     console.log("O seu desempenho foi ruim!")
+        // }else if(media < 7 ){
+        //     console.log("O seu desempenho foi regular!")
+        //}else if(media < 9){
+        //     console.log("O seu desempenho foi bom!")
+        // }else{6
+        //     console.log("O seu desempenho foi ótimo!")
+        // }
+
+        //let dia1 = parseFloat(prompt("Dia que nasceu"))
+        //let mes1 = parseFloat(prompt("Ano que nasceu"))
+        //let ano1 = parseFloat(prompt("Ano que nasceu"))
+
+        //var data = new Date()
+        //var dia = data.getDate()
+        //var mes = data.getMonth() + 1
+        // var ano = data.getFullYear()
+
+        // var diaNasc = document.getElementById("diaNasc").value
+        // var mesNasc = document.getElementById("mesNasc").value
+        //var anoNasc = document.getElementById("anoNasc").value
+        // var idade = (ano - anoNasc)
+
+        function enviar() {
+            event.preventDefault()
+
+            var data = new Date()
+            var dia = data.getDate()
+            var mes = data.getMonth() + 1
+            var ano = data.getFullYear()
+            var diaNasc = document.getElementById("diaNasc").value
+            var mesNasc = document.getElementById("mesNasc").value
+            var anoNasc = document.getElementById("anoNasc").value
+            var idade = (ano - anoNasc)
+
+            document.getElementById('idade').innerHTML = "Sua idade é: " + idade
+
+
+            if (mes < mesNasc || (mes === mesNasc && dia < diaNasc)) {
+          idade--;
+            }
+            else if (idade == 0 || idade <= 3) {
+                document.getElementById("resultado").innerHTML = "Você é uma bebê"
+                console.log = ("Você é um bebê")
+            } else if ((idade >3 && idade <=4) || (idade >4 && idade <= 7)) {
+                document.getElementById("resultado").innerHTML = "Você é uma criança"
+                console.log = ("Você é uma criança")
+            } else if ((idade >7 && idade <=8) || (idade >8 && idade <= 12)) {
+                document.getElementById("resultado").innerHTML = "Você é um pré adolescente"
+                console.log = ("Você é um pré adolescente")
+            } else if ((idade >12 && idade <=13) || (idade >13 && idade <= 19)) {
+                document.getElementById("resultado").innerHTML = "Você é um adolescente"
+                console.log = ("Você é um adolescente")
+            } else if ((idade >19 && idade <=20) || (idade >20 && idade <= 59)) {
+                document.getElementById("resultado").innerHTML = "Você é um adulto"
+                console.log = ("Você é um adulto")
+            } else if ((idade >=60)){
+                document.getElementById("resultado").innerHTML = "Você é um idoso"
+                console.log = ("Você é um idoso")
+            }
+
+            return idade;
+        }
+        // console.log("")
+        //document.write(idade)
+    </script>
+
+
+
+
+
+</body>
+
+</html>
