@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+
+    <script>
+        /*Array é uma coleção/ lista de dados indexados, ou seja, informações seqeunciais começando em 0*/
+
+        var massas = ['Lasanha', 'Pizza', 'Ravioli', 'Esfiha']
+        massas.push('Espaguete')
+        console.log(massas)
+
+        var diversos = ['Maria', 25, 'João', 40]
+
+        var herois = []
+        
+        herois[0] = 'Batman'
+        herois[1] = 'Hulk'
+        herois[2] = 'Homem de ferro'
+        herois[3] = 'Thor'
+
+        herois.push()
+
+        console.log(
+            "O " + herois[2] + " almoça " + massas [2] + " e tem uma idade de " + diversos[1] + " anos."
+        )
+
+        var bandeira = []
+
+        bandeira[0] = 'preto'
+        bandeira[1] = 'branco'
+        bandeira[2] = 'vermelho'
+        bandeira[3] = 'amarelo'
+        bandeira[4] = 'azul'
+
+        bandeira.push()
+        console.log(
+            "As cores do estado de São Paulo são: " +bandeira+"\n"+"Seu tamanho é: "+bandeira.length+
+            ", e seus itens são: "+"\n"+"bandeira[0]"+bandeira[0]+"\n"+"bandeira[1]"+bandeira[1]+"\n"+"bandeira[2]"+bandeira[2]
+            +"\n"+"bandeira[3]"+bandeira[3]+"\n"+"bandeira[4]"+bandeira[4]
+        )
+
+        //Operações com métodos e propriedades para arrays
+        var frutas = ['Goiaba','Banana', 'Mamão', 'Uva', 'Limão']
+        //sort() -> método/função que ordena o conteúdo do array
+        var frutasOrdenadas = frutas.sort()
+        //reverse() -> método/função que ordena (ao contrário) o conteúdo do array
+        var frutasReverse = frutas.reverse()
+        // index0f() -> método/função que retorna o índice do elemento
+        var frutasIndex = frutas.indexOf('Uva')
+
+        //array heterogêneo
+        var coisas= [10, "Luana", new Date, herois, '<h2>Olá</h2>']
+        console.log(coisas)
+
+        var nome = prompt('Qual é o seu nome?')
+        var idade = prompt('Qual é a sua idade?')
+        var sexo = prompt('Qual é o seu sexo?')
+        var cidade = prompt('Qual é a sua cidade de nascimento?')
+
+        var resposta = [nome, idade, sexo, cidade]
+
+        console.log("Seu nome é "+resposta[0]+"\n" +"Sua idade é: "+resposta[1]+
+        "\n" +"Sua cidade de nascimento é: "+resposta[3])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /*  let bot = window.document.getElementById('butRes')
+    bot.addEventListener('click', calcular)
+
+
+    function calcular(){
+        let nome = window.document.getElementById('nome')
+        let idade = window.document.getElementById('idade')
+        let sexo = window.document.getElementById('sexo')
+        let cidade = window.document.getElementById('cidade')
+        resultado.innerHTML = ``
+
+    }*/
+
+
+
+
+
+    </script>
+</body>
+</html>
